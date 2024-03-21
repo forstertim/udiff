@@ -11,8 +11,8 @@ The performance of the model heavily depends on the accuracy of the derivative c
 - [Installation](#installation) 💻
 - [Included tools](#included-tools) 🧰
 - [Examples](#examples) ⚗️
-  * [Exponential function - Polynomial regression approach](#polynomial-fit)
-  * [Exponential function - Symbolic regression approach](#bms-fit)
+  * [Exponential function - Polynomial regression approach](#polynomial-fit-to-exponential-function)
+  * [Exponential function - Symbolic regression approach](#bms-fit-to-exponential)
   * [Batch bioprocess](#bioprocess)
 - [References](#references) 📚
 
