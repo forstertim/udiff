@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+authors:
+- family-names: "Forster"
+  given-names: "Tim"
+title: "In-Silico Data Generation in Python (InSiDa-Py)"
+url: "https://github.com/forstertim/insidapy"
+preferred-citation:
+  type: article
+  authors:
+  - family-names: "Forster"
+    given-names: "Tim"
+  - family-names: "Vázquez"
+    given-names: "Daniel"
+  - family-names: "Mueller"
+    given-names: "Claudio"
+  - family-names: "Guillén-Gosálbez"
+    given-names: "Gonzalo"
+  doi: "10.1016/j.ces.2024.120606"
+  journal: "Chemical Engineering Science"
+  title: "Machine learning uncovers analytical kinetic models of bioprocesses"
+  issue: 120606
+  year: 2024
