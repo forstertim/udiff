@@ -1,10 +1,10 @@
 udiff
 =====
-This package specifically targets applications in kinetic model development for chemical and biochemical reactions.
+This package specifically targets applications in kinetic model development for chemical and biochemical reactions. Examples are given in [Forster et al. (2024)](#references).
 
-The situation considered is the following: The modeler has access to noisy concentration data (i.e., from a batch reactor). A model structure for the dynamics is chosen by the modeler (i.e., dydt=k*y). The modeler then needs to estimate the parameters (i.e., the rate constant k in this example). 
+The situation considered is the following: The modeler has access to noisy concentration data (i.e., from a batch reactor). A model structure for the dynamics is chosen by the modeler (i.e., $\frac{dy}{dt}=k\cdot y$). The modeler then needs to estimate the parameters (i.e., the rate constant $k$ in this example). 
 
-One possible way to estimate the parameters in such a situation is to calculate the derivatives dydt from the noisy data. With this, the equation of the model can be solved for the parameters. However, this is not trivial in case data is scarce and if the data is noisy.
+One possible way to estimate the parameters in such a situation is to calculate the derivatives $\frac{dy}{dt}$ from the noisy data. With this, the equation of the model can be solved for the parameters. However, this is not trivial in case data is scarce and if the data is noisy.
 
 The performance of the model heavily depends on the accuracy of the derivative calculation in the first step. This package includes a collection of tools for simplifying this process. It includes a smoothing and a differentiation module. Both of them are discussed below.
 
@@ -46,7 +46,7 @@ As mentioned above, the presence of noise can make the calculation of derivative
 
 The following methods are available:
 
-* **Polyfit**: A polynomial is fit through the data points. The user can indicate the maximum degree of the polynomial. The algorithm searches for the best Bayesian Information Criterion (BIC) and returns the coefficients of the most appropriate polynomial that can be derived analytically. This package includes an improved approach applied in a work for kinetic model development for biochemical reactions [Forster et al. (2023)](#references). 
+* **Polyfit**: A polynomial is fit through the data points. The user can indicate the maximum degree of the polynomial. The algorithm searches for the best Bayesian Information Criterion (BIC) and returns the coefficients of the most appropriate polynomial that can be derived analytically. This package includes an improved approach applied in a work for kinetic model development for biochemical reactions [Forster et al. (2023)](#references) and [Forster et al. (2024)](#references). 
 
 * **Symbolic regression fit**: Symbolic regression searches for an algebraic function that fits the data in an appropriate manner. Currently, the Bayesian Machine Scientist (BMS) [Guimerà et al. (2020)](#references) is implemented in this package. The user can define allowed unary/binary operators (i.e., +, -, div, mul, etc.) and a number of iteration steps (Markov-chain Monte Carlo steps, MCMC). The function returns a sympy expression that can subsequently be derived analytically.
 
@@ -214,6 +214,9 @@ As a comparison to the calculated derivatives by the symbolic regression approac
 
 References
 ==========
+
+> **Forster et al.**, Machine learning uncovers analytical kinetic models of bioprocesses. **2024**. *Chemical Engineering Science*. [URL](https://www.sciencedirect.com/science/article/pii/S0009250924009060)
+
 > **Forster et al.**, Modeling of bioprocesses via MINLP-based symbolic regression of S-system formalisms. **2023**. *Computers & Chemical Engineering*. [URL](https://www.sciencedirect.com/science/article/pii/S0098135422004410)
 
 > **Guimerà et al.**, A Bayesian machine scientist to aid in the solution of challenging scientific problems. **2020**. *Sci. Adv.*. [URL](https://www.science.org/doi/10.1126/sciadv.aav6971)
