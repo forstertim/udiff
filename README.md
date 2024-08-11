@@ -212,10 +212,14 @@ As a comparison to the calculated derivatives by the symbolic regression approac
 *Fig 7. Example of a BMS fit through noisy bioprocess data. The top row shows concentration profiles (ground truth (dashed black line), noisy observations (black circles), BMS fit (red solid line)). The bottom row shows the derivatives (ground truth (dashed black line), forward finite differences (blue line with diamond), BMS calculations (red line with crosses)).*
 
 
-References
-==========
+Citation
+========
+If you use this package in your research, please cite the following publication: 
 
-> **Forster et al.**, Machine learning uncovers analytical kinetic models of bioprocesses. **2024**. *Chemical Engineering Science*. [URL](https://www.sciencedirect.com/science/article/pii/S0009250924009060)
+> **Forster et al.**, Machine learning uncovers analytical kinetic models of bioprocesses. **2024**. *Chemical Engineering Science*. [URL](https://www.sciencedirect.com/science/article/pii/S0009250924009060).
+
+Additional References
+=====================
 
 > **Forster et al.**, Modeling of bioprocesses via MINLP-based symbolic regression of S-system formalisms. **2023**. *Computers & Chemical Engineering*. [URL](https://www.sciencedirect.com/science/article/pii/S0098135422004410)
 
